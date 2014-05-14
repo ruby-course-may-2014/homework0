@@ -1,8 +1,8 @@
 # Домашнее задание по вводному уроку
 
-1. [Установите Руби и git](http://railsinstaller.org/en)
-2. [Сделайте форк этого репозитория](https://help.github.com/articles/fork-a-repo)
-3. Склонируйте репозиторий.
+1. [Установите Руби и git](http://railsinstaller.org/en).
+2. [Сделайте форк этого репозитория](https://help.github.com/articles/fork-a-repo).
+3. Склонируйте ваш форк.
 4. Запустите `ruby test.rb`. Должно быть 24 упавших теста.
 5. В файлах `task1.rb`, `task2.rb`, `task3.rb` есть задачи. Постарайтесь
    их решить.
