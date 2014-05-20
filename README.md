@@ -22,4 +22,5 @@
 * https://help.github.com/articles/set-up-git
 * https://help.github.com/articles/fork-a-repo
 * http://ruby-doc.org/
+* http://gitimmersion.com/
 * http://google.com
