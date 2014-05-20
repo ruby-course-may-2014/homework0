@@ -25,7 +25,7 @@ class TestMax2Sum < MiniTest::Unit::TestCase
   end
 
   def test_max_2_sum_general_case
-    assert_equal 80, sum([50, 10, 20, 30])
+    assert_equal 80, max_2_sum([50, 10, 20, 30])
   end
 end
 
