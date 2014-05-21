@@ -43,7 +43,9 @@ class TestSumToN < MiniTest::Unit::TestCase
   def test_sum_to_n_general_case
     assert_equal true, sum_to_n?([50, -5, 10, 20, 30], 40), "General sum should work"
     assert_equal true, sum_to_n?([50, -5, 10, 20, 30], 25), "Negative numbers should work"
+    assert_equal true, sum_to_n?([50, -15, 10, 20, 30], -5), "Negative target numbers should work"
     assert_equal false, sum_to_n?([50, -5, 10, 20, 30], 100), "One number should only be counted once"
+    assert_equal false, sum_to_n?([100, 150, 2, 3, 4], 10), "Thou should not cheat"
   end
 end
 
