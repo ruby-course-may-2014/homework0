@@ -31,19 +31,19 @@ end
 
 class TestSumToN < MiniTest::Unit::TestCase
   def test_empty_array_only_sums_to_zero
-    assert_equal true, sum_to_n?([], 0)
-    assert_equal false, sum_to_n?([], 10)
+    assert_equal true, sum_to_n?([], 0), "Empty array should sum to zero"
+    assert_equal false, sum_to_n?([], 10), "Empty array should not sum to non-zero"
   end
 
   def test_one_element_array_only_sums_to_it
-    assert_equal true, sum_to_n?([10], 10)
-    assert_equal false, sum_to_n?([10], 20)
+    assert_equal true, sum_to_n?([10], 10), "One element array should sum to that element"
+    assert_equal false, sum_to_n?([10], 20), "One element array should not sum to other than its element"
   end
 
   def test_sum_to_n_general_case
-    assert_equal true, sum_to_n?([50, -5, 10, 20, 30], 40)
-    assert_equal true, sum_to_n?([50, -5, 10, 20, 30], 25)
-    assert_equal false, sum_to_n?([50, -5, 10, 20, 30], 100)
+    assert_equal true, sum_to_n?([50, -5, 10, 20, 30], 40), "General sum should work"
+    assert_equal true, sum_to_n?([50, -5, 10, 20, 30], 25), "Negative numbers should work"
+    assert_equal false, sum_to_n?([50, -5, 10, 20, 30], 100), "One number should only be counted once"
   end
 end
 
