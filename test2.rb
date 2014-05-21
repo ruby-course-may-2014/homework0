@@ -10,16 +10,16 @@ end
 
 class TestStartsWithVowel < MiniTest::Unit::TestCase
   def test_starts_with_vowel_works
-    assert_equal false, starts_with_vowel?('Batman')
-    assert_equal false, starts_with_vowel?('batman')
-    assert_equal true, starts_with_vowel?('Ivy')
-    assert_equal true, starts_with_vowel?('ivy')
+    assert_equal false, starts_with_vowel?('Batman'), 'should handle non-vowel in capital'
+    assert_equal false, starts_with_vowel?('batman'), 'should handle non-vowel in lower'
+    assert_equal true, starts_with_vowel?('Ivy'), 'should handle vowel in capital'
+    assert_equal true, starts_with_vowel?('ivy'), 'should handle vowel in lower'
   end
 
   def test_starts_with_vowel_works_with_no_letters
-    assert_equal false, starts_with_vowel?('')
-    assert_equal false, starts_with_vowel?('123aaa')
-    assert_equal false, starts_with_vowel?('!aaa')
+    assert_equal false, starts_with_vowel?(''), 'should handle empty string'
+    assert_equal false, starts_with_vowel?('123aaa'), 'should handle numbers'
+    assert_equal false, starts_with_vowel?('!aaa'), 'should handle arbitrary symbols'
   end
 end
 
