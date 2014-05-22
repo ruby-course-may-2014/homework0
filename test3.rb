@@ -27,7 +27,7 @@ class TestBookInStockSetters < MiniTest::Unit::TestCase
 
   def test_isbn_setter
     @book.isbn = "6-65111-662-2"
-    assert_in_delta "6-65111-662-2", @book.isbn
+    assert_equal "6-65111-662-2", @book.isbn
   end
 
   def test_price_setter
